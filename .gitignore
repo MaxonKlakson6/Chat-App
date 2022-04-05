@@ -1,0 +1,13 @@
+# Environment variables
+/api/.env
+/client/.env
+
+# Node modules
+/api/node_modules
+/client/node_modules
+
+# IDE
+.idea
+
+# build
+/build
