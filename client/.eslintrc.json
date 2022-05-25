@@ -1,6 +1,7 @@
 {
     "extends": [
         "eslint:recommended",
+        "plugin:import/typescript",
         "plugin:@typescript-eslint/recommended",
         "prettier"
     ],
@@ -8,9 +9,14 @@
     "parserOptions": { "project": ["./tsconfig.json"] },
     "plugins": [
         "@typescript-eslint",
-        "prettier"
+        "prettier",
+        "import"
     ],
     "ignorePatterns": ["src/**/*.test.ts"],
     "rules":{
+    "import/no-unresolved": "off",
+      "import/no-relative-parent-imports": "warn"
+    },
+    "settings": {
     }
 }

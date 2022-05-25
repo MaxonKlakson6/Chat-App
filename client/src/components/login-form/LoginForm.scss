@@ -1,0 +1,54 @@
+@import "src/colors/colors";
+
+.login-form {
+    width: 396px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 8px 16px rgba(0, 0, 0, 0.2);
+
+    .login-form-container {
+        display: flex;
+        flex-direction: column;
+        padding: 0.8em;
+
+        .login-input {
+            padding: 1rem;
+            margin-bottom: 0.7rem;
+            border: 1px solid $input-border-color;
+            outline: 0;
+            border-radius: 5px;
+
+            &::placeholder {
+                opacity: 0.5;
+            }
+
+            &:focus-visible {
+                border-color: $input-border-focus;
+                box-shadow: 0 0 0 2px #e7f3ff;
+                caret-color: $input-border-focus;
+            }
+        }
+        .form-button {
+            width: 100%;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1.3em;
+            font-weight: 600;
+            line-height: 40px;
+            border-radius: 5px;
+            background-color: $btn-log-in-color;
+            color: #fff;
+        }
+
+        .link-forgot-password {
+            margin: 0.5rem 0;
+            text-align: center;
+        }
+
+        .form-button-green {
+            margin: 0 auto;
+            font-size: 1em;
+            background-color: $btn-create-acc-color;
+        }
+    }
+}
