@@ -1,0 +1,23 @@
+@import '../fonts/fonts.scss';
+
+$page-bg-grey: #f0f2f5;
+
+.login {
+    height: 100vh;
+    background-color: $page-bg-grey;
+
+    .content {
+        width: 800px;
+        margin: 0 auto;
+        padding: 92px 0;
+
+        .left-column {
+            .logo {
+                width: 100px;
+            }
+            p {
+                font-family: SFPro;
+            }
+        }
+    }
+}

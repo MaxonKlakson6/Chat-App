@@ -1,0 +1,38 @@
+$input-border-color: #dddfe2;
+$input-border-focus: #1877f2;
+$btn-create-acc-color: #42b72a;
+
+.login-form {
+    width: 396px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 8px 16px rgba(0, 0, 0, 0.2);
+
+    .login-input {
+        border: 1px solid $input-border-color;
+        outline: 0;
+        border-radius: 5px;
+
+        &::placeholder {
+            opacity: 0.5;
+        }
+
+        &:focus-visible {
+            border-color: $input-border-focus;
+            box-shadow: 0 0 0 2px #e7f3ff;
+            caret-color: $input-border-focus;
+        }
+    }
+    .form-button {
+        text-align: center;
+        text-decoration: none;
+        font-weight: 600;
+        line-height: 40px;
+        border-radius: 5px;
+    }
+    .form-button-green {
+        width: 240px;
+        margin: 0 auto;
+        background-color: $btn-create-acc-color;
+    }
+}
