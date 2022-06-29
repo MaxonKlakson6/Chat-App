@@ -1,0 +1,25 @@
+@import '../../fonts/fonts';
+@import "../../colors/colors";
+
+html, body, #root {
+    height: 100%;
+}
+.login-page{
+    height: 100%;
+    background-color: $page-bg-grey;
+
+    .login-page-container {
+        width: 800px;
+        margin: 0 auto;
+        padding: 92px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .text-under-logo {
+            font-family: SFPro;
+            margin-top: 1.5rem;
+            font-size: 2em;
+        }
+    }
+}
