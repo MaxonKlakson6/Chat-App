@@ -1,9 +1,6 @@
-import React from 'react';
 import { Input } from '@chakra-ui/react';
 
-interface InputProps {
-    [key: string]: string;
-}
+type InputProps = Record<string, string>;
 
 const FormInput = ({
     className,

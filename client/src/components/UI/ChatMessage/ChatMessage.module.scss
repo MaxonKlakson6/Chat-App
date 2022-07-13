@@ -1,0 +1,12 @@
+.chatMessage {
+  max-width: 500px;
+  padding: 10px;
+  margin-left: 10px;
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 5px;
+
+  .senderName {
+    font-size: 16px;
+  }
+}

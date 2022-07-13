@@ -1,0 +1,32 @@
+@import 'src/static/colors/colors';
+
+.messageHolderContainer{
+  height: 100%;
+  display: grid;
+  align-items: end;
+  overflow: auto;
+
+  &::-webkit-scrollbar{
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+    margin: 63px 0 58px;
+    border-radius: 5px;
+    background: $scrollbar-track-color;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $scrollbar-color;
+    border-radius: 5px;
+  }
+}
+
+.messageHolder {
+  display: flex;
+  padding: 75px 0;
+  overflow: auto;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 10px;
+}

@@ -1,0 +1,43 @@
+@import "src/static/colors/colors";
+
+
+.chatItem {
+  position: relative;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style-type: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $dark-white-color;
+  }
+
+  &:first-child{
+    margin-top: 60px;
+  }
+
+  .chatName {
+    font-size: 16px !important;
+  }
+
+  .chatInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .timeLastSendMessage {
+      font-weight: 400;
+      background-color: transparent;
+    }
+
+    .noReadMessages{
+      text-align: center;
+      border-radius: 50px;
+      background-color: $no-read-messages-background;
+      color: white;
+    }
+  }
+}
+

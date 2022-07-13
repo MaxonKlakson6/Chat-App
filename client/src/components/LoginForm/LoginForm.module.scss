@@ -1,17 +1,17 @@
-@import "src/colors/colors";
+@import "src/static/colors/colors";
 
-.login-form {
+.loginForm {
     width: 396px;
     border-radius: 5px;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 8px 16px rgba(0, 0, 0, 0.2);
 
-    .login-form-container {
+    .loginFormContainer {
         display: flex;
         flex-direction: column;
         padding: 0.8em;
 
-        .login-input {
+        .loginInput {
             padding: 1rem;
             margin-bottom: 0.7rem;
             border: 1px solid $input-border-color;
@@ -24,11 +24,11 @@
 
             &:focus-visible {
                 border-color: $input-border-focus;
-                box-shadow: 0 0 0 2px #e7f3ff;
+                box-shadow: 0 0 0 2px $input-box-shadow;
                 caret-color: $input-border-focus;
             }
         }
-        .form-button {
+        .formButton {
             width: 100%;
             text-align: center;
             text-decoration: none;
@@ -40,12 +40,12 @@
             color: #fff;
         }
 
-        .link-forgot-password {
+        .linkForgotPassword {
             margin: 0.5rem 0;
             text-align: center;
         }
 
-        .form-button-green {
+        .formButtonGreen {
             margin: 0 auto;
             font-size: 1em;
             background-color: $btn-create-acc-color;
