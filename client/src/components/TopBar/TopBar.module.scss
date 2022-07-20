@@ -1,0 +1,28 @@
+@import "src/static/colors/colors";
+
+.navbarMenu {
+  width: calc(81% + 2px);
+  height: 60px;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-bottom: 1px solid $border-between-blocks;
+
+  .chatTitle {
+    margin-left: 15px;
+
+    .chatName {
+      font-size: 14px;
+    }
+
+    .userSessionInfo {
+      font-size: 14px;
+    }
+  }
+
+  .iconHolder {
+    margin-right: 15px;
+  }
+}

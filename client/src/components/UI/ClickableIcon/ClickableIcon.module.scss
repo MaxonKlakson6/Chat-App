@@ -1,0 +1,12 @@
+@import 'src/static/colors/colors';
+
+.clickableIcon {
+  max-width: 40px !important;
+  padding: 0 !important;
+  background-color: #fff !important;
+  border-radius: 50% !important;
+
+  &:active{
+    background-color: $dark-white-color !important;
+  }
+}

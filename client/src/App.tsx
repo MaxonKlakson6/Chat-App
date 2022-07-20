@@ -1,6 +1,6 @@
-import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { ChakraProvider } from '@chakra-ui/react';
+
 import LoginPage from 'src/pages/LoginPage/LoginPage';
 import MainPage from 'src/pages/MainPage/MainPage';
 

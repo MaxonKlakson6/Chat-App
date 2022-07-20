@@ -1,10 +1,16 @@
-import React from 'react';
+import { Box } from '@chakra-ui/react';
+import classNames from 'classnames';
+
+import SideBar from 'src/components/SideBar/SideBar';
+import ChatWindow from 'src/components/ChatWindow/ChatWindow';
+import styles from 'src/pages/MainPage/MainPage.module.scss';
 
 const MainPage = (): JSX.Element => {
     return (
-        <div>
-            <h1>Here will be main page</h1>
-        </div>
+        <Box className={classNames(styles.mainPage)}>
+            <SideBar />
+            <ChatWindow />
+        </Box>
     );
 };
 

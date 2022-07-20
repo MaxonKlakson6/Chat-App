@@ -1,17 +1,17 @@
-import React from 'react';
 import { Box, Text, Image } from '@chakra-ui/react';
+import classNames from 'classnames';
 
-import LoginForm from 'src/components/login-form/LoginForm';
-import imageSvg from 'src/images/login-page/logo.svg';
-import 'src/pages/LoginPage/LoginPage.scss';
+import LoginForm from 'src/components/LoginForm/LoginForm';
+import imageSvg from 'src/static/images/login-page/logo.svg';
+import styles from 'src/pages/LoginPage/LoginPage.module.scss';
 
 const LoginPage = (): JSX.Element => {
     return (
-        <Box className='login-page'>
-            <Box className='login-page-container'>
+        <Box className={classNames(styles.loginPage)}>
+            <Box className={classNames(styles.loginPageContainer)}>
                 <Box>
                     <Image src={imageSvg} />
-                    <Text className='text-under-logo'>
+                    <Text className={classNames(styles.textUnderLogo)}>
                         Join and chat with friends
                     </Text>
                 </Box>

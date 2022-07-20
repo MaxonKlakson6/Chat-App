@@ -1,14 +1,11 @@
-@import '../../fonts/fonts';
-@import "../../colors/colors";
+@import 'src/static/fonts/fonts';
+@import "src/static/colors/colors";
 
-html, body, #root {
-    height: 100%;
-}
-.login-page{
+.loginPage{
     height: 100%;
     background-color: $page-bg-grey;
 
-    .login-page-container {
+    .loginPageContainer {
         width: 800px;
         margin: 0 auto;
         padding: 92px 0;
@@ -16,10 +13,16 @@ html, body, #root {
         justify-content: space-between;
         align-items: center;
 
-        .text-under-logo {
+        .textUnderLogo {
             font-family: SFPro;
             margin-top: 1.5rem;
             font-size: 2em;
         }
     }
+}
+
+:export {
+    loginPage: login-page;
+    loginPageContainer: login-page-container;
+    textUnderLogo: text-under-logo;
 }

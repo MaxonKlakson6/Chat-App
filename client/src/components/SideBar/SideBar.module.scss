@@ -1,0 +1,53 @@
+@import "src/static/colors/colors";
+
+.sideBar{
+  width: 20%;
+  overflow: auto;
+  padding-right: 10px;
+
+  &::-webkit-scrollbar{
+    width: 4px;
+
+  }
+
+  &::-webkit-scrollbar-track {
+    margin: 60px 0 3px;
+    background: $dark-white-color;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $scroll-color;
+    border-radius: 5px;
+  }
+
+  .chatListNavigationAndSettingsMenu {
+    width: 350px;
+    height: 60px;
+    background-color: #fff;
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .chatSearcher {
+      width: 75%;
+      z-index: -1;
+      background-color: $dark-white-color;
+      border: 1px solid $dark-white-color;
+      
+      &:focus{
+        background-color: #fff;
+      }
+    }
+  }
+
+  .chatList {
+    margin: 0;
+  }
+}
+
+.sideBarRightSide {
+  width: 5px;
+  border-right: 1px solid $border-between-blocks;
+}
